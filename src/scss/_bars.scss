@@ -1,0 +1,77 @@
+@import 'colors';
+
+.myskills {
+    background-color: $darkgrey;
+    color: $white;
+}
+
+.myskills {
+    background-color: $darkgrey;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0em 2em;
+}
+
+.skill-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0em 2em;
+    color: $white;
+}
+
+.skillscont {
+    display: flex;
+    flex-direction: row;
+    line-height: 1em;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+
+}
+
+
+.html-bar {
+    background-color: $red;
+    width: 20em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-bar {
+    background-color: #6A1019;
+    width: 19em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-bar {
+    background-color: #FF4D3C;
+    width: 17em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.php-bar {
+    background-color: #D01F31;
+    width: 15em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
