@@ -2,6 +2,7 @@
 @import 'nav';
 @import 'bars';
 @import 'portfolio';
+@import 'form';
 
 
 * {
@@ -203,7 +204,7 @@ h3 {
 }
 
 .bio-text {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.4em;
   display: flex;
   flex-direction: column;
@@ -213,6 +214,10 @@ h3 {
   @media (max-width: 900px) {
     width: 90%;
     font-size: 0.8em;
+  }
+
+  p {
+    padding-bottom: 1.5em;
   }
 }
 
@@ -233,64 +238,6 @@ h3 {
   @media (max-width: 900px) {
     width: 70%;
   }
-}
-
-
-///////////////////Contact section
-
-.getintouch {
-  background-color: $white;
-  color: #120F08;
-}
-
-.myform {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em;
-}
-
-.myform input {
-  padding: 0.5em;
-  background-color: $white;
-  border: none;
-  border-bottom: solid black 0.2em;
-}
-
-.myform .send {
-  border: none;
-  color: $red;
-  display: block;
-  font-family: $title;
-  font-weight: 900;
-  font-size: 2em;
-  text-decoration: none;
-  background-color: $white;
-}
-
-.myform textarea {
-  font-family: inherit;
-  background-color: $white;
-  border: none;
-  width: 15em;
-  border-bottom: solid black 0.2em;
-}
-
-.send {
-  font-family: $title;
-  font-size: 2em;
-  padding: 1em;
-  border-radius: 50%;
-  text-align: center;
-  border: 0;
-  transition: all 0.3s ease 0s;
-}
-
-.send:hover {
-  color: $white;
-  background: $red;
-  border-radius: 150%;
-  padding: 1em;
 }
 
 

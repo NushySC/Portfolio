@@ -2,7 +2,7 @@
        $name = $_POST['name'];
        $email = $_POST['email'];
        $message = $_POST['message'];
-       $from = 'From: My Contact Form';
+       $from = 'My website';
        $to = 'anuska@anuskasampedro.com';
        $subject = 'Hello';
 
@@ -12,10 +12,10 @@
        
     if (isset($_POST["send"]))  {
            if (mail ($to, $subject, $body, $from)) {
-            echo "<script>alert('Mail was sent !');</script>";
+            echo "<script>alert('Your email was sent succesfully and I will contact you as soon as possible.');</script>";
             echo "<script>document.location.href='index.html'</script>";
            } else {
-            echo "<script>alert('Try again please!');</script>";
+            echo "<script>alert('There was an error submitting the form, please try again.');</script>";
             echo "<script>document.location.href='index.html'</script>";
            }
        }
