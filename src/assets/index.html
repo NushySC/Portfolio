@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script type="text/javascript" src="bars.js"></script>
 
 
   <title>Anuska Sampedro - Full Stack Web Developer</title>
@@ -105,34 +105,38 @@
     </section>
 
     <section class="myskills" id="skills">
-      <div class="content">
-        <h2 class="secondary-heading">My Skills</h2>
+      <div class="content_bars">
+        <h2 class="secondary-skills">My Skills</h2>
 
-        <div class="skillscont">
-          <div class="tag-skills">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>PHP</p>
+        <div class="skillbar-wrapper">
+          <div class="skillbar clearfix html5" data-percent="95%">
+            <h4 class="skillbar-title"><span>HTML5</span></h4>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">100%</div>
           </div>
 
-          <div class="skills-items">
-            <div class="html-bar">96%
+          <div class="skillbar clearfix css" data-percent="92%">
+            <h4 class="skillbar-title"><span>CSS</span></h4>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">100%</div>
+          </div>
 
-            </div>
-            <div class="css-bar">92%
+          <div class="skillbar clearfix javascript" data-percent="80%">
+            <h4 class="skillbar-title"><span>JavaScript</span></h4>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">100%</div>
+          </div>
 
-            </div>
-            <div class="js-bar">85%
-
-            </div>
-            <div class="php-bar">80%
-
-            </div>
-
+          <div class="skillbar clearfix php" data-percent="70%">
+            <h4 class="skillbar-title"><span>PHP</span></h4>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">100%</div>
           </div>
 
         </div>
+
+
+
       </div>
 
     </section>
@@ -165,16 +169,56 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-      <div class="content content_port">
-        <h2 class="secondary-heading">My Portfolio</h2>
-        <div class="portfolio-images">
-          <img src="https://as1.ftcdn.net/jpg/01/27/23/06/220_F_127230638_s6BJZDOvqj1G8xdBwUupvv10AZIkAkps.jpg" alt="essaouira_morocco">
-          <img src="https://as2.ftcdn.net/jpg/01/22/54/01/220_F_122540174_cOkI1YvUz3CnXKGtZcfQQ42y8B1SGl2j.jpg" alt="red_square_moscow">
-          <img src="https://as2.ftcdn.net/jpg/00/83/85/21/220_F_83852173_YFmwTt1IatJA48rn5ZCN4xgkvSghmBUB.jpg" alt="capitol_washington">
-          <img src="https://as2.ftcdn.net/jpg/00/81/99/71/220_F_81997165_2GGsEftSFQsQqTvVaRqRb22AfEviT5hM.jpg" alt="tokio_japan">
-          <img src="https://as1.ftcdn.net/jpg/00/81/98/60/220_F_81986007_GYg7nBEySJLZ0gdAZDBfkrNOKDRkd2Zj.jpg" alt="athens_greece">
-          <img src="https://as1.ftcdn.net/jpg/00/70/55/88/220_F_70558874_U5SCVlJf4G56sxKVXvaS0yi4i1X1q7BB.jpg"alt="buzludja_bulgaria">
+      <div class="content">
+        <h2 class="secondary-heading portfolio-title">My Portfolio</h2>
+        <div class="portfolio-cont">
+
+
+          <div class="port-img">
+            <div class="front">
+              <img src="https://as2.ftcdn.net/jpg/01/22/54/01/220_F_122540174_cOkI1YvUz3CnXKGtZcfQQ42y8B1SGl2j.jpg" alt="red_square_moscow">
+            </div>
+            <div class="back">
+              <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
+            </div>
+          </div>
+
+          <div class="port-img">
+            <div class="front"><img src="https://as2.ftcdn.net/jpg/00/83/85/21/220_F_83852173_YFmwTt1IatJA48rn5ZCN4xgkvSghmBUB.jpg"
+                alt="capitol_washington"></div>
+            <div class="back">
+              <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
+            </div>
+          </div>
+       
+
+        <div class="port-img">
+          <div class="front"><img src="https://as2.ftcdn.net/jpg/00/81/99/71/220_F_81997165_2GGsEftSFQsQqTvVaRqRb22AfEviT5hM.jpg"
+              alt="tokio_japan"></div>
+          <div class="back">
+            <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
+          </div>
         </div>
+     
+      <div class="port-img">
+        <div class="front"><img src="https://as1.ftcdn.net/jpg/00/81/98/60/220_F_81986007_GYg7nBEySJLZ0gdAZDBfkrNOKDRkd2Zj.jpg"
+            alt="athens_greece"></div>
+        <div class="back">
+          <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
+        </div>
+      </div>
+      
+
+      <div class="port-img">
+        <div class="front"><img src="https://as1.ftcdn.net/jpg/00/70/55/88/220_F_70558874_U5SCVlJf4G56sxKVXvaS0yi4i1X1q7BB.jpg"
+            alt="buzludja_bulgaria"></div>
+        <div class="back">
+          <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
+        </div>
+      </div>
+      
+
+      </div>
       </div>
     </section>
 
@@ -186,7 +230,7 @@
         <form action="form.php" method="POST" name="form" class="myform">
           <p>Name</p> <input type="text" name="name" required>
           <p>Email</p> <input type="text" name="email" required>
-          <p>Message</p><textarea name="message" rows="6" cols="25" required></textarea><br/>
+          <p>Message</p><textarea name="message" rows="6" cols="25" required></textarea><br />
           <br>
           <input type="submit" id="send" class="send" name="send" value="Send!">
 
@@ -210,7 +254,7 @@
   </main>
   </footer>
 
-  
+
   <script type="text/javascript">
     function myFunction() {
       var x = document.getElementById("myTopnav");

@@ -1,77 +1,105 @@
 @import 'colors';
 
-.myskills {
-    background-color: $darkgrey;
-    color: $white;
+.content_bars {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2em;
+  }
+
+.skillbar-wrapper {
+	margin: 1.5em auto;
+	max-width: 70vw;
+	padding-bottom: 2em;
 }
 
-.myskills {
-    background-color: $darkgrey;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.skillbar {
+	position:relative;
+	margin-bottom: 1em;
+	width: 100%;
+	background: #eee;
+	height: 2em;
+	border-radius: 3px;	
 }
 
-.tag-skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0em 2em;
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight: bold;
+	font-size: 0.75em;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	margin: 0;
 }
 
-.skill-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0em 2em;
-    color: $white;
+.skillbar-title span {
+	display: block;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 0 20px;
+	height:35px;
+	line-height: 35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
 }
 
-.skillscont {
-    display: flex;
-    flex-direction: row;
-    line-height: 1em;
+.skillbar-bar {
+	height: 35px;
+	width: 0%;
+	border-radius: 3px;
+	transition: 500ms linear;
+	transition-property: width, background-color;
+}
 
-    @media (max-width: 1000px) {
-        display: none;
-    }
+.skill-bar-percent {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 11px;
+	height: 35px;
+	line-height: 35px;
+	color: rgba( 0, 0, 0, 0.4 );
+	transition: color 500ms ease-out;
+}
 
+.complete .skill-bar-percent {
+	color: $white;
+}
+
+.complete.server .skill-bar-percent {
+	color: $darkgrey;
+}
+
+.html5 .skillbar-title {
+	background: $red;	
+}
+
+.html5 .skillbar-bar {
+	background: $red;	
 }
 
 
-.html-bar {
-    background-color: $red;
-    width: 20em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.css .skillbar-title {
+	background: $darkgrey;	
 }
 
-.css-bar {
-    background-color: #6A1019;
-    width: 19em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.css .skillbar-bar {
+	background: $darkgrey;	
 }
 
-.js-bar {
-    background-color: #FF4D3C;
-    width: 17em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.javascript .skillbar-title {
+	background: $mediumgrey;
+}
+.javascript .skillbar-bar {
+	background: $mediumgrey;
 }
 
-.php-bar {
-    background-color: #D01F31;
-    width: 15em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.php .skillbar-title {
+	background: #FF4D3C;	
 }
+
+.php .skillbar-bar {
+	background: #FF4D3C;	
+}
+
