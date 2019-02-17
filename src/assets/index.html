@@ -34,7 +34,7 @@
   <div class="Navbar">
 
     <div class="topnav" id="myTopnav">
-      <a href="#"><img src="img/ank.svg" class="logo"></a>
+      <a href="#"><img src="img/ank.svg" alt="anuska_logo" class="logo"></a>
       <a href="#" class="active">Home</a>
       <a href="#skills hvr-underline-from-center">Skills</a>
       <a href="#portfolio">Portfolio</a>
@@ -157,7 +157,7 @@
             </p>
           </div>
           <div class="bio-pic">
-            <img src="img/anuska_back.jpg">
+            <img src="img/anuska_back.jpg" alt="anuska_profile">
           </div>
         </div>
 
@@ -168,29 +168,27 @@
       <div class="content content_port">
         <h2 class="secondary-heading">My Portfolio</h2>
         <div class="portfolio-images">
-          <img src="https://as1.ftcdn.net/jpg/01/27/23/06/220_F_127230638_s6BJZDOvqj1G8xdBwUupvv10AZIkAkps.jpg">
-          <img src="https://as2.ftcdn.net/jpg/01/22/54/01/220_F_122540174_cOkI1YvUz3CnXKGtZcfQQ42y8B1SGl2j.jpg">
-          <img src="https://as2.ftcdn.net/jpg/00/83/85/21/220_F_83852173_YFmwTt1IatJA48rn5ZCN4xgkvSghmBUB.jpg">
-          <img src="https://as2.ftcdn.net/jpg/00/81/99/71/220_F_81997165_2GGsEftSFQsQqTvVaRqRb22AfEviT5hM.jpg">
-          <img src="https://as1.ftcdn.net/jpg/00/81/98/60/220_F_81986007_GYg7nBEySJLZ0gdAZDBfkrNOKDRkd2Zj.jpg">
-          <img src="https://as1.ftcdn.net/jpg/00/70/55/88/220_F_70558874_U5SCVlJf4G56sxKVXvaS0yi4i1X1q7BB.jpg">
+          <img src="https://as1.ftcdn.net/jpg/01/27/23/06/220_F_127230638_s6BJZDOvqj1G8xdBwUupvv10AZIkAkps.jpg" alt="essaouira_morocco">
+          <img src="https://as2.ftcdn.net/jpg/01/22/54/01/220_F_122540174_cOkI1YvUz3CnXKGtZcfQQ42y8B1SGl2j.jpg" alt="red_square_moscow">
+          <img src="https://as2.ftcdn.net/jpg/00/83/85/21/220_F_83852173_YFmwTt1IatJA48rn5ZCN4xgkvSghmBUB.jpg" alt="capitol_washington">
+          <img src="https://as2.ftcdn.net/jpg/00/81/99/71/220_F_81997165_2GGsEftSFQsQqTvVaRqRb22AfEviT5hM.jpg" alt="tokio_japan">
+          <img src="https://as1.ftcdn.net/jpg/00/81/98/60/220_F_81986007_GYg7nBEySJLZ0gdAZDBfkrNOKDRkd2Zj.jpg" alt="athens_greece">
+          <img src="https://as1.ftcdn.net/jpg/00/70/55/88/220_F_70558874_U5SCVlJf4G56sxKVXvaS0yi4i1X1q7BB.jpg"alt="buzludja_bulgaria">
         </div>
       </div>
     </section>
+
 
     <section class="getintouch" id="contact">
       <div class="content">
         <h2 class="secondary-heading">Get in Touch</h2>
 
-        <form action="/action_page.php" method="get" name="myForm" class="myform">
-          First name: <input type="text" name="fname"><br>
-          Email: <input type="email" name="email"><br>
-          Your message:
-          <textarea name="message"></textarea>
+        <form action="form.php" method="POST" name="form" class="myform">
+          <p>Name</p> <input type="text" name="name" required>
+          <p>Email</p> <input type="text" name="email" required>
+          <p>Message</p><textarea name="message" rows="6" cols="25" required></textarea><br/>
           <br>
-          <input type="button" class="send" onclick="formSubmit()" value="Send!">
-
-        </form>
+          <input type="submit" id="send" class="send" name="send" value="Send!">
 
         </form>
       </div>
@@ -212,24 +210,7 @@
   </main>
   </footer>
 
-  <!-- <section class="grid-test">
-    <div class="row">
-      <div class="colum1of2">
-Hello
-      </div>
-      <div class="colum2of2">
-Goodbye
-      </div>
-      <div class="row2">
-        <div class="colum1of2">
-  Hello
-        </div>
-        <div class="colum2of2">
-  Goodbye
-        </div>
-
-    </div>
-  </section> -->
+  
   <script type="text/javascript">
     function myFunction() {
       var x = document.getElementById("myTopnav");
