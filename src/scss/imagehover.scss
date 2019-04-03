@@ -40,8 +40,16 @@
       padding: $figcaption-padding;
       @include fill;
       color: $text-color;
-      h1, h2, h3, h4, h5, h6 {
+      h1, h3, h2, h4, h6 {
         color: $text-color;
+      }
+      h5 {
+        color: $black;
+      }
+
+      p {
+        color: $white;
+        font-size: 0.8em;
       }
     }
     a {
