@@ -1,0 +1,19 @@
+// change to column with media query
+.three-processes {
+    display: flex;
+    flex-direction: row;
+  
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+  
+  .process {
+    margin: 2em;
+  }
+
+  .processtitle {
+    font-family: $title;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }  

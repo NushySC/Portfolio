@@ -1,0 +1,75 @@
+//Header
+
+.header {
+  position: relative;
+  height: 65vh;
+  background-color: black;
+  background-image:
+    // linear-gradient(to right bottom, rgba(184, 0, 28, 0.308), rgba(255, 228, 214, 0.315) ), 
+    url(../img/keyboard.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 600px) {
+    height: 40vh;
+  }
+
+  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+}
+
+.heading {
+  color: $white;
+  font-family: $text;
+  font-size: 4em;
+  position: absolute;
+  top: 25%;
+  right: 0%;
+
+@media (max-width: 1080px) {
+  font-size: 3em;
+}
+
+@media (max-width: 800px) {
+  font-size: 2em;
+}
+
+@media (max-width: 500px) {
+  font-size: 1.4em;
+}
+}
+
+.logo {
+  margin-left: auto;
+  height: 1em;
+  margin-right: 2em;
+}
+
+.webdeveloper {
+  background-color: $white;
+  font-family: $title;
+  font-weight: 700;
+  color: $black;
+  padding: 0.5em;
+  display: block;
+}
+
+.name {
+  background-color: $red;
+  padding: 0.5em;
+  display: inline-flex;
+  text-align: right;
+  animation: movein;
+  animation-duration: 1s;
+  font-family: $title;
+  font-weight: 700;
+}
+
+@keyframes movein {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

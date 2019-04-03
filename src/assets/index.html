@@ -1,21 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/index.css" />
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100391460-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100391460-1');
+  </script>
+
   <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,500,700| family=Raleway" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="img/ank_red.ico"/>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-
+  <link rel="shortcut icon" type="image/png" href="img/ank_red.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="bars.js"></script>
-
+  <link rel="stylesheet" href="css/imagehover.min.css">
 
   <title>Anuska Sampedro - Full Stack Web Developer</title>
 </head>
@@ -24,25 +42,22 @@
 
   <header class="header">
 
-    <div class="textbox">
       <h1 class="heading">
         <span class="name">Hi, I'm Anuska</span>
         <span class="webdeveloper"> I'm a Full Stack Web Developer</span>
       </h1>
-    </div>
   </header>
 
 
-  <div class="Navbar">
+  <div class="navbar">
 
     <div class="topnav" id="myTopnav">
       <a href="#"><img src="img/ank.svg" alt="anuska_logo" class="logo"></a>
       <a href="#" class="active">Home</a>
-      <a href="#skills hvr-underline-from-center">Skills</a>
+      <a href="#skills">Skills</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
       <a href="#about">About</a>
-      <a href="#social">Social</a>
+      <a href="#social">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -51,20 +66,19 @@
   </div>
 
 
-
-
-
   <main>
     <section class="intro">
       <div class="content">
 
         <h2 class="introtext">I would love to help your with your website, feel free to get in touch!</h2>
 
-        <p>My skills are broad: from ux to design, front end to back end development. I enjoy each aspect, and love
+        <p>My skills are broad: from frontend and backend development to UX and graphic design, I enjoy each aspect, and
+          love
           building sites & mobile apps from start to finish, for clients all over the world.</p>
 
       </div>
     </section>
+
 
 
     <section class="processes">
@@ -103,41 +117,45 @@
       </div>
       </div>
 
-
     </section>
+
 
     <section class="myskills" id="skills">
       <div class="content_bars">
-        <h2 class="secondary-skills">My Skills</h2>
+        <h2 class="secondary-heading">My Skills</h2>
 
         <div class="skillbar-wrapper">
           <div class="skillbar clearfix html5" data-percent="95%">
             <h4 class="skillbar-title"><span>HTML5</span></h4>
             <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">100%</div>
+            <div class="skill-bar-percent">97%</div>
           </div>
 
           <div class="skillbar clearfix css" data-percent="92%">
             <h4 class="skillbar-title"><span>CSS</span></h4>
             <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">100%</div>
+            <div class="skill-bar-percent">95%</div>
           </div>
 
           <div class="skillbar clearfix javascript" data-percent="80%">
             <h4 class="skillbar-title"><span>JavaScript</span></h4>
             <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">100%</div>
+            <div class="skill-bar-percent">80%</div>
+          </div>
+
+          <div class="skillbar clearfix react" data-percent="70%">
+            <h4 class="skillbar-title"><span>React</span></h4>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">70%</div>
           </div>
 
           <div class="skillbar clearfix php" data-percent="70%">
             <h4 class="skillbar-title"><span>PHP</span></h4>
             <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">100%</div>
+            <div class="skill-bar-percent">70%</div>
           </div>
 
         </div>
-
-
 
       </div>
 
@@ -149,15 +167,17 @@
         <h2 class="secondary-heading">About me</h2>
         <div class="biography">
           <div class="bio-text">
-            <p>I’m a web developer and graphic designer living in Prague. I spend my days with my hands in many
-              different areas of web development from back end programming to front end engineering, user experience
+            <p>I’m a web developer and graphic designer living in Prague with experience in many
+              different areas of web development from backend programming to frontend engineering, user experience
               and visual design.</p>
 
-            <p>I have worked on a multitude of web and print based projects for a range of clients providing Web Design
-              (Photoshop, Illustrator, InDesign) and Development (PHP, HTML, CSS, SAAS, JS, WordPress, Bootstrap,
-              Responsive Layouts), Corporate Branding and Graphic Design.</p>
+            <p>I have worked on several web and print based projects for a range of clients providing design services
+              (Photoshop, Illustrator, InDesign) and web development as well (PHP, HTML, CSS, SAAS, JS, WordPress,
+              Bootstrap,
+              Responsive Layouts).</p>
 
-            <p>I’m extremely passionate about web development and design in all it’s forms and helping people build and
+            <p>I’m extremely passionate about web development and design in all forms and I love helping people build
+              and
               improve their online presence. Aside from web development, I enjoy arts, literature, photography and
               music, to name a few.
             </p>
@@ -170,87 +190,88 @@
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+
+
+    <!-- <section class="portfolio" id="portfolio">
       <div class="content">
         <h2 class="secondary-heading portfolio-title">My Portfolio</h2>
-        <div class="portfolio-cont">
 
 
-          <div class="port-img">
-            <div class="front">
-              <img src="https://as2.ftcdn.net/jpg/01/22/54/01/220_F_122540174_cOkI1YvUz3CnXKGtZcfQQ42y8B1SGl2j.jpg" alt="red_square_moscow">
-            </div>
-            <div class="back">
-              <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
-            </div>
-          </div>
-
-          <div class="port-img">
-            <div class="front"><img src="https://as2.ftcdn.net/jpg/00/83/85/21/220_F_83852173_YFmwTt1IatJA48rn5ZCN4xgkvSghmBUB.jpg"
-                alt="capitol_washington"></div>
-            <div class="back">
-              <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
-            </div>
-          </div>
-       
+        <figure class="imghvr-slide-up">
+          <img src="/img/game_radar.png" alt="red_square_moscow">
+          <figcaption>
+            Final project for the bootcamp
+          </figcaption>
+          <a href="http://gameradar.data4you.cz/"></a>
+        </figure>
 
         <div class="port-img">
-          <div class="front"><img src="https://as2.ftcdn.net/jpg/00/81/99/71/220_F_81997165_2GGsEftSFQsQqTvVaRqRb22AfEviT5hM.jpg"
-              alt="tokio_japan"></div>
-          <div class="back">
-            <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
-          </div>
+          <img src="/img/maimuna.png" alt="capitol_washington">
         </div>
-     
-      <div class="port-img">
-        <div class="front"><img src="https://as1.ftcdn.net/jpg/00/81/98/60/220_F_81986007_GYg7nBEySJLZ0gdAZDBfkrNOKDRkd2Zj.jpg"
-            alt="athens_greece"></div>
-        <div class="back">
-          <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
-        </div>
-      </div>
-      
 
-      <div class="port-img">
-        <div class="front"><img src="https://as1.ftcdn.net/jpg/00/70/55/88/220_F_70558874_U5SCVlJf4G56sxKVXvaS0yi4i1X1q7BB.jpg"
-            alt="buzludja_bulgaria"></div>
-        <div class="back">
-          <p>I'm updating my portfolio gallery.<br> In the meantime, this is a sample of my photography work.</p>
+        <div class="port-img">
+          <img src="/img/coffee.png" alt="buzludja_bulgaria">
+        </div>
+
+        <div class="port-img">
+          <img src="/img/Studio_Ghibli.png" alt="tokio_japan">
+
+        </div>
+
+        <div class="port-img">
+          <img src="/img/moliner.png" alt="athens_greece">
+
+        </div>
+
+
+        <div class="port-img">
+          <img src="/img/belfast.png" alt="buzludja_bulgaria">
         </div>
       </div>
-      
-
-      </div>
-      </div>
-    </section>
+    </section> -->
 
 
     <section class="getintouch" id="contact">
       <div class="content">
         <h2 class="secondary-heading">Get in Touch</h2>
 
-        <form action="form.php" method="POST" name="form" class="myform">
-          <label>Name</label> <input type="text" name="name" required class="input_field">
-          <label>Email</label> <input type="text" name="email" required class="input_field">
-          <lable>Message</lable><textarea name="message" rows="6" cols="25" required class="input_field"></textarea><br />
-          <br>
-          <input type="submit" id="send" class="send" name="send" value="Send!">
+        <div class="copy-social">
+          If you want to contact me, please write an email to <a
+            href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%61%6E%75%73%6B%61%40%61%6E%75%73%6B%61%73%61%6D%70%65%64%72%6F%2E%63%6F%6D">
+            <span class="e-mail" data-user="aksuna" data-website="moc.ordepmasaksuna"></span></a><br>
 
-        </form>
+
+          Otherwise, connect through social media.
+
+        </div>
+        <div class="icons-big">
+          <a href="https://www.linkedin.com/in/anuskasampedro/" target="_blank"><i
+              class="fab fa-linkedin-in icon-big"></i></a>
+          <a href="https://www.instagram.com/nushysc/" target="_blank"><i class="fab fa-instagram icon-big"></i></a>
+          <a href="https://github.com/NushySC" target="_blank"><i class="fab fa-github icon-big"></i></a>
+          <a href="https://www.behance.net/anksam" target="_blank"><i class="fab fa-behance icon-big"></i></a>
+
+        </div>
+
+
+
+        <!-- <form action="anotherform.php" method="POST" name="form" class="myform">
+              <label>Name</label> <input type="text" name="name" required class="input_field">
+              <label>Email</label> <input type="text" name="email" required class="input_field">
+              <lable>Message</lable><textarea name="message" rows="6" cols="25" required class="input_field"></textarea><br />
+              <br>
+              <input type="submit" id="send" class="send" name="send" value="Send!">
+    
+            </form> -->
       </div>
-
-
     </section>
+
 
     <footer class="footer" id="social">
       <div class="content">
-        <h2 class="secondary-heading">Find me here</h2>
-        <div class="icons-big">
-          <a href="https://www.linkedin.com/in/anuskasampedro/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/nushysc/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/NushySC" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <p class="copy">Copyright © 2019 Anuska Sampedro. All rights reserved.</p>
+        <!-- <h2 class="secondary-heading">Find me here</h2> -->
+
+        <p class="copy">Copyright ©2019 Anuska Sampedro. All rights reserved.</p>
       </div>
 
   </main>

@@ -3,45 +3,36 @@
 @import 'bars';
 @import 'portfolio';
 @import 'form';
-
+@import 'email';
+@import 'bio';
+@import 'social';
+@import 'header';
+@import 'process';
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
-
-
-  box-sizing: border-box;
   font-family: $text;
   line-height: 1.7em;
   color: $darkgrey;
   margin: 0;
 }
 
-p {
-  line-height: 1.8em;
-  text-align: justify;
-}
 
-h3 {
-  font-family: $title;
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.logo {
-  margin-left: auto;
-  height: 1em;
-  margin-right: 2em;
+section {
+  padding: 2em;
+  @media (max-width: 500px) {
+    padding: 1em;
+  }
 }
 
 .content {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 2em 2em 3em 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,220 +46,41 @@ h3 {
 }
 
 
-
-.header {
-  position: relative;
-  height: 65vh;
-  background-color: black;
-  background-image:
-    // linear-gradient(to right bottom, rgba(184, 0, 28, 0.308), rgba(255, 228, 214, 0.315) ), 
-    url(../img/keyboard.jpg);
-  background-size: cover;
-  background-position: center;
-
-  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
-}
-
-
-.heading {
-  color: $white;
-  font-family: $text;
-  font-size: 4em;
-
-  @media (max-width: 980px) {
-    font-size: 2em;
-  }
-
-  @media (max-width: 500px) {
-    font-size: 1em;
-  }
-}
-
-.myskills {
-  background-color: $white;
-}
-
-.secondary-skills {
-  font-family: $title;
-  font-size: 4em;
-  margin: 0 auto;
-  width: 80%;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-
-  @media (max-width: 600px) {
-    font-size: 2em;
-    margin: 1em;
-    padding: 0;
-  }
-
-}
-
 .secondary-heading {
   font-family: $title;
   font-size: 4em;
-  padding: 1em;
+  padding: 0.5em;
   margin: 0 auto;
+  text-align: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
+    padding: 0.4em;
+  }
+
+  @media (max-width: 700px) {
+    padding: 0.2em;
+    font-size: 3em;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0.2em;
     font-size: 2em;
-    margin: 1em;
-    padding: 0;
   }
 
 }
 
-.textbox {
-  position: absolute;
-  top: 25%;
-  right: 0%;
-}
-
-.name {
-  background-color: $red;
-  padding: 0.5em;
-  display: inline-flex;
-  text-align: right;
-  animation: movein;
-  animation-duration: 1s;
-  font-family: $title;
-}
-
-.webdeveloper {
-  background-color: $white;
-  color: $black;
-  padding: 0.5em;
-  display: block;
-}
-
-@keyframes movein {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
+//Intro Section
 
 .intro {
   background-color: $white;
-  margin: 0;
-  padding: 2em;
 }
 
 .introtext {
   color: $red;
   margin-bottom: 1em;
-}
 
-// change to column with media query
-.three-processes {
-  display: flex;
-  flex-direction: row;
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-  }
-
-}
-
-.process {
-  margin: 2em;
-}
-
-///////////// Bio section
-
-
-.about {
-  background-color: $red;
-  color: $white;
-  padding: 1em;
-}
-
-
-.biography {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
-
-}
-
-.bio-text {
-  font-size: 1em;
-  line-height: 1.4em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 40%;
-
-  @media (max-width: 900px) {
-    width: 90%;
-    font-size: 0.8em;
-  }
-
-  p {
-    padding-bottom: 1.5em;
-  }
-}
-
-.bio_pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bio-pic img {
-  width: 20em;
-  border-radius: 50%;
-  margin: 3em;
-  -webkit-box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
-  box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
-
-  @media (max-width: 900px) {
-    width: 70%;
-  }
-}
-
-
-////////////////// Social section
-
-.icons-big {
-  font-size: 2em;
-  color: #120F08;
-
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
+    padding: 0.4em;
     font-size: 1em;
   }
-}
-
-.icons-big a {
-  color: #120F08;
-  text-decoration: none;
-  margin: 1em;
-}
-
-.fab:hover {
-  color: $white;
-}
-
-.footer {
-  background-color: $red;
-  color: $white;
-}
-
-.copy {
-  color: $white;
-  font-size: 0.60em;
-  margin-top: 2.5em;
 }

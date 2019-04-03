@@ -1,36 +1,39 @@
 @import 'colors';
 
+.myskills {
+	background-color: $white;
+}
+
 .content_bars {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 2em;
-  }
+}
 
 .skillbar-wrapper {
 	margin: 1.5em auto;
-	max-width: 70vw;
+	max-width: 80vw;
 	padding-bottom: 2em;
 }
 
 .skillbar {
-	position:relative;
+	position: relative;
 	margin-bottom: 1em;
 	width: 100%;
-	background: #eee;
+	background: $lightgrey;
 	height: 2em;
-	border-radius: 3px;	
+	border-radius: 0.2em;
 }
 
 .skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-	width:110px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
 	font-weight: bold;
-	font-size: 0.75em;
-	color: #fff;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
+	color: $white;
+	border-top-left-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
 	margin: 0;
 }
 
@@ -38,16 +41,16 @@
 	display: block;
 	background: rgba(0, 0, 0, 0.1);
 	padding: 0 20px;
-	height:35px;
-	line-height: 35px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
+	height: 2em;
+	line-height: 2em;
+	border-top-left-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
 }
 
 .skillbar-bar {
-	height: 35px;
+	height: 2em;
 	width: 0%;
-	border-radius: 3px;
+	border-radius: 0.2em;
 	transition: 500ms linear;
 	transition-property: width, background-color;
 }
@@ -57,14 +60,14 @@
 	right: 10px;
 	top: 0;
 	font-size: 11px;
-	height: 35px;
-	line-height: 35px;
-	color: rgba( 0, 0, 0, 0.4 );
+	height: 2em;
+	line-height: 2em;
+	color: rgba(0, 0, 0, 0.4);
 	transition: color 500ms ease-out;
 }
 
 .complete .skill-bar-percent {
-	color: $white;
+	color: $darkgrey;
 }
 
 .complete.server .skill-bar-percent {
@@ -72,34 +75,41 @@
 }
 
 .html5 .skillbar-title {
-	background: $red;	
+	background: $red;
 }
 
 .html5 .skillbar-bar {
-	background: $red;	
+	background: $red;
 }
 
-
 .css .skillbar-title {
-	background: $darkgrey;	
+	background: $darkgrey;
 }
 
 .css .skillbar-bar {
-	background: $darkgrey;	
+	background: $darkgrey;
 }
 
 .javascript .skillbar-title {
 	background: $mediumgrey;
 }
+
 .javascript .skillbar-bar {
 	background: $mediumgrey;
 }
 
 .php .skillbar-title {
-	background: #FF4D3C;	
+	background: #FF4D3C;
 }
 
 .php .skillbar-bar {
-	background: #FF4D3C;	
+	background: #FF4D3C;
 }
 
+.react .skillbar-title {
+	background: $red;
+}
+
+.react .skillbar-bar {
+	background: $red;
+}

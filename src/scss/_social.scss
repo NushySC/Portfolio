@@ -1,0 +1,40 @@
+////////////////// Social section
+
+.icon-big {
+    font-size: 3em;
+    color: #120F08;
+    margin: 1em;
+
+    &:hover {
+        color: $red;
+      }
+  
+    @media (max-width: 350px) {
+      font-size: 0.8em;
+      margin: 0.3em;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 2em;
+        margin: 0.8em;
+      }
+      @media (max-width: 500px) {
+        font-size: 1.2em;
+        margin: 0.5em;
+      }
+  }
+
+
+  
+  .footer {
+    background-color: $red;
+    color: $white;
+    padding: 2em;
+    font-size: 0.8em;
+  }
+  
+  .copy-social {
+    color: $darkgrey;
+    font-size: 1em;
+    margin-top: 2.5em;
+  }

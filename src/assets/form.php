@@ -1,24 +1,42 @@
 <?php
-       $name = $_POST['name'];
-       $email = $_POST['email'];
-       $message = $_POST['message'];
-       $from = 'My website';
-       $to = 'anuska@anuskasampedro.com';
-       $subject = 'Hello';
+    error_reporting(0);
+    if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+        $from = 'Demo Contact Form'; 
+        $to = 'test@testmail.com'; 
+        $subject = 'Message from Contact Demo ';
 
-       
-       $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-   
-       
-    if (isset($_POST["send"]))  {
-           if (mail ($to, $subject, $body, $from)) {
-            echo "<script>alert('Your email was sent succesfully and I will contact you as soon as possible.');</script>";
-            echo "<script>document.location.href='index.html'</script>";
-           } else {
-            echo "<script>alert('There was an error submitting the form, please try again.');</script>";
-            echo "<script>document.location.href='index.html'</script>";
-           }
-       }
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-       var_dump($_POST);
-    ?>
+        // Check if name has been entered
+        if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+        }
+
+        // Check if email has been entered and is valid
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errEmail = 'Please enter a valid email address';
+        }
+
+        //Check if message has been entered
+        if (!$_POST['message']) {
+            $errMessage = 'Please enter your message';
+        }
+        //Check if simple anti-bot test is correct
+        if ($human !== 5) {
+            $errHuman = 'Your anti-spam is incorrect';
+        }
+
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+    if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+    } else {
+        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+    }
+}
+    }
+?>
