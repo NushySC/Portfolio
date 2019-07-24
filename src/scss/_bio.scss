@@ -6,7 +6,6 @@
   padding: 1em;
 }
 
-
 .biography {
   display: flex;
   flex-direction: row;
@@ -17,43 +16,42 @@
     flex-direction: column;
   }
 
-}
+  &__text {
+    font-family: $text;
+    font-size: 1em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    padding-top: 2em;
 
-.bio-text {
-  font-family: $text;
-  font-size: 1em;
-  line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 40%;
-  padding-top: 2em;
+    @media (max-width: 1000px) {
+      width: 90%;
+      font-size: 0.8em;
+    }
 
-  @media (max-width: 1000px) {
-    width: 90%;
-    font-size: 0.8em;
+    p {
+      padding-bottom: 1.5em;
+    }
   }
 
-  p {
-    padding-bottom: 1.5em;
+  &___pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-.bio_pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__pic img {
+    width: 20em;
+    border-radius: 50%;
+    margin: 3em;
+    -webkit-box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
+    box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
 
-.bio-pic img {
-  width: 20em;
-  border-radius: 50%;
-  margin: 3em;
-  -webkit-box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
-  box-shadow: 10px 16px 36px -11px rgba(0, 0, 0, 0.65);
-
-  @media (max-width: 900px) {
-    width: 70%;
+    @media (max-width: 900px) {
+      width: 70%;
+    }
   }
 }

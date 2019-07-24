@@ -10,12 +10,6 @@
 	padding: 2em;
 }
 
-.skillbar-wrapper {
-	margin: 1.5em auto;
-	max-width: 80vw;
-	padding-bottom: 2em;
-}
-
 .skillbar {
 	position: relative;
 	margin-bottom: 1em;
@@ -23,54 +17,59 @@
 	background: $lightgrey;
 	height: 2em;
 	border-radius: 0.2em;
+
+	&-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 110px;
+		font-weight: bold;
+		color: $white;
+		border-top-left-radius: 0.2em;
+		border-bottom-left-radius: 0.2em;
+		margin: 0;
+	}
+
+	&-wrapper {
+		margin: 1.5em auto;
+		max-width: 80vw;
+		padding-bottom: 2em;
+	}
+
+	&-title span {
+		display: block;
+		background: rgba(0, 0, 0, 0.1);
+		padding: 0 20px;
+		height: 2em;
+		line-height: 2em;
+		border-top-left-radius: 0.2em;
+		border-bottom-left-radius: 0.2em;
+	}
+	&-bar {
+		height: 2em;
+		width: 0%;
+		border-radius: 0.2em;
+		transition: 500ms linear;
+		transition-property: width, background-color;
+	}
+
+	&-percent {
+		position: absolute;
+		right: 10px;
+		top: 0;
+		font-size: 11px;
+		height: 2em;
+		line-height: 2em;
+		color: rgba(0, 0, 0, 0.4);
+		transition: color 500ms ease-out;
+	}
 }
 
-.skillbar-title {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 110px;
-	font-weight: bold;
-	color: $white;
-	border-top-left-radius: 0.2em;
-	border-bottom-left-radius: 0.2em;
-	margin: 0;
-}
-
-.skillbar-title span {
-	display: block;
-	background: rgba(0, 0, 0, 0.1);
-	padding: 0 20px;
-	height: 2em;
-	line-height: 2em;
-	border-top-left-radius: 0.2em;
-	border-bottom-left-radius: 0.2em;
-}
-
-.skillbar-bar {
-	height: 2em;
-	width: 0%;
-	border-radius: 0.2em;
-	transition: 500ms linear;
-	transition-property: width, background-color;
-}
-
-.skill-bar-percent {
-	position: absolute;
-	right: 10px;
-	top: 0;
-	font-size: 11px;
-	height: 2em;
-	line-height: 2em;
-	color: rgba(0, 0, 0, 0.4);
-	transition: color 500ms ease-out;
-}
-
-.complete .skill-bar-percent {
+.skillbar .skillbar .skill-bar .complete .skillbar-percent {
 	color: $darkgrey;
 }
 
-.complete.server .skill-bar-percent {
+.complete.server .skillbar-percent {
 	color: $darkgrey;
 }
 
@@ -99,11 +98,11 @@
 }
 
 .php .skillbar-title {
-	background: #FF4D3C;
+	background: #ff4d3c;
 }
 
 .php .skillbar-bar {
-	background: #FF4D3C;
+	background: #ff4d3c;
 }
 
 .react .skillbar-title {
